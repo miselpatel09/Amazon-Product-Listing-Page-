@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="cart">Cart: <span id="cart-count">0</span> items</div>
+            <div class="wishlist">Wishlist: <span id="wishlist-count">0</span> items</div>
+        </div>
+    </header>
+
+    <div id="product-grid">
+        <div class="product" data-id="1">
+            <div class="product-image" onclick="showImageModal(1)">
+                <img src="p11.jpg" alt="Product 1">
+            </div>
+            <h4>Auxtron AirBolt 505 True Wireless (TWS) Earbuds - Bluetooth 5.0, Full Touch Earphones, IPX5 Water Resistant,
+                 HD Stereo Sound, High Bass, Up to 36 Hours Playtime with Charging</h4>
+            <p>Price = 2900.00 ₹</p>
+            <p>Rating:  ★★★★☆  (4/5)</p>
+            <button onclick="addToCart(1)">Add to Cart</button>
+            <button onclick="addToWishlist(1)">Add to Wishlist</button>
+        </div>
+
+        <div class="product" data-id="2">
+            <div class="product-image" onclick="showImageModal(2)">
+                <img src="p6.jpg" alt="Product 2">
+            </div>
+            <h4>Voods Airbuds Active True Wireless Earbuds with ENC, 
+                Up to 70H Playtime & Fast Charging Bluetooth in Ear Headset, 10mm Drivers, Hands Free Calling, 
+                IP65 Rating (Black)</h4>
+            <p>Price = 1499.00 ₹</p>
+            <p>Rating: ★★★☆☆ (3/5)</p>
+            <button onclick="addToCart(2)">Add to Cart</button>
+            <button onclick="addToWishlist(2)">Add to Wishlist</button>
+        </div>
+
+        <div class="product" data-id="3">
+            <div class="product-image" onclick="showImageModal(3)">
+                <img src="p8.jpg" alt="Product 3">
+            </div>
+            <h4>Wings Flobuds 400 High Fidelity Lifestyle in Ear Earbuds, Wireless Bluetooth 5.3, 
+                50 Hrs Playtime with 10 Hours Earbuds Playtime, Best Earbuds with Smart ENC, Low Latency 40ms</h4>
+            <p>Price = 1999.00 ₹</p>
+            <p>Rating: ★★★★★ (5/5)</p>
+            <button onclick="addToCart(3)">Add to Cart</button>
+            <button onclick="addToWishlist(3)">Add to Wishlist</button>
+        </div>
+
+        <div class="product" data-id="4">
+            <div class="product-image" onclick="showImageModal(4)">
+                <img src="p9.jpg" alt="Product 4">
+            </div>
+            <h4>Noise Newly Launched Air Buds 3 in-Ear Truly Wireless Earbuds with 45H of Playtime,
+                 Quad Mic with ENC, Instacharge(10 min=200 min),13mm Driver, BT v5.3(Jet Black)</h4>
+            <p>Price = 1900.00 ₹</p>
+            <p>Rating: ★★★★☆ (4/5)</p>
+            <button onclick="addToCart(4)">Add to Cart</button>
+            <button onclick="addToWishlist(4)">Add to Wishlist</button>
+        </div>
+    </div>
+
+    <div id="image-modal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="Product Image">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
